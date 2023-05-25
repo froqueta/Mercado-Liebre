@@ -12,13 +12,13 @@ console.log ('Servidor corriendo en el puerto 3000');
 );
 
 app.get('/',(req, res) => {
-    res.sendFile(path.resolve(__dirname, './view/home.html'))    
+    res.sendFile(path.resolve(__dirname, './View/home.html'))    
 });
 
 app.get('/register',(req, res) => {
-    res.sendFile(path.resolve(__dirname, './view/register.html'))    
+    res.sendFile(path.resolve(__dirname, './View/register.html'))    
 });
 
 app.get('/login',(req, res) => {
-    res.sendFile(path.resolve(__dirname, './view/login.html'))    
+    res.sendFile(path.resolve(__dirname, './View/login.html'))    
 });

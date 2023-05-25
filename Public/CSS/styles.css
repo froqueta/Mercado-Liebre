@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: #EAC926;
+}
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+header p{
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+}
+
+header nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li {
+    list-style-type: none;
+    text-emphasis: left;
+}
+
+header .buscador p {
+background-color: #fff;
+border: 1px solid #000;
+color: #666;
+}
+
+header .buscador div.input{
+    background-color: white;
+    border: 1px solid black;
+    color: #666;
+}
+ header .buscador div .lupa i{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 200px;
+}
+
+header div.burguer-menu i{
+        color:#fff;
+        background-color: #1259c3;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px 8px 20px 8px;
+        border-radius: 5px;
+        height: 25 px;
+        width: 40px;
+    }
+
+header div.burguer-menu {
+    text-align: center;
+}
+
+header{
+    width: 100vw;
+}
+
+.banner{
+    width: 100vw;
+}
+
+footer {
+    text-align: center;
+}
+
+footer div.credit-card i{
+    color:#1259c3;
+        font-size: 2em;
+        margin-bottom : 10px;
+}
+
+footer div.gift i{
+        color:#1259c3;
+        font-size: 2em;
+        margin-bottom : 10px;
+}
+
+footer div.safety i{
+        color:#1259c3;
+        font-size: 2em;
+        margin-bottom : 10px;
+}
+
+main section{
+margin: 0 auto;
+width: 90vw;
+background-color: rgb(240, 239, 239);
+}
+main {
+    background-color: rgb(240, 239, 239);  
+}
+main section article {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+main section article p {
+    font-size: 16px;
+}
+main section article div {
+text-align: left;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.circulo-verde {
+    width: 40px;
+    height: 40px;
+    border: solid 1px #39b54a;
+    border-radius: 100%;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.desc-prod {
+display: block;
+width: 70%;}
+
+.productos{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.buscador{
+    width: 50%;
+    pad: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+main section article div i.fas {color: #39b54a;} 
+main section article p.desc {
+    color: #39b54a;
+} 
+
+#formulario-registro {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+form div{
+    margin-bottom: 10px;
+    border-radius: 5%;
+    width: 100%;
+}
+.text-field {
+    padding: 5px;  
+    width: 100%; 
+}
+.selecciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.botonForm {
+    width: 40%;
+}
+
+.botonSubmit {
+    background-color: green;
+    color: #fff;
+}
+.botonEnviar {
+    background-color: #1259c3;
+    color: #fff;
+    border-color: #1259c3;
+    transition:background-color 0.7s;
+}
+.botonEnviar:hover {
+    background-color: #0022AA ;}
+
+.botonReset {
+background-color: red;
+color: #fff;
+}
+article {
+    transition: all 0,5s;
+}
+@media (min-width: 361px) {
+    .desc-prod {display: block;}
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;}
+    main section article {
+    width: 45%;}
+    .formularios {max-width: 450px;}
+    header nav {display: flex;
+    justify-content: space-between;}
+    header div.burguer-menu {display: none;}
+   
+}
+
+@media (min-width: 769px) {
+    main section article {
+        width: 22,5%;}
+    .desc-prod{
+        display:none;
+         }
+    article:hover .desc-prod{
+            display:block;
+            }
+    main article:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            }
+    .formularios {max-width: 450px;}
+    article:hover .info-article i {
+            transform:rotate(-90deg);
+            }
+     footer article div i{
+        color:#1259c3;
+        transition: color 0,5s;}
+    
+    footer article div i:hover {
+        color:#0022AA
+        }
+}
